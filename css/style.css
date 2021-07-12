@@ -173,3 +173,92 @@ hr {
     color: #ED6B4F;
     border-radius: 35px;
 }
+
+
+
+/* medaia query */
+
+/* mobile Phone */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+
+
+
+    .player-item {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-item {
+        flex-direction: column;
+    }
+
+    .blog_img {
+        width: 80%;
+    }
+
+    .blog-detailes {
+        padding-left: 16px;
+        margin-top: 3px;
+    }
+
+    .blog-detailes h3 {
+        padding-right: 6px;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .single-course {
+        margin-top: 30px;
+    }
+}
+
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .player-item {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 20px;
+    }
+
+    .top-blog-title {
+        padding-left: 20px;
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .single-course {
+        margin-top: 30px;
+    }
+}
